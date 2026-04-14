@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chicken-tikka-masala",
+    "name": "Chicken Tikka Masala",
+    "description": "Tender chicken pieces in a rich, creamy tomato-spiced sauce. A crowd-pleasing classic.",
+    "mainIngredient": "chicken",
+    "ingredients": [
+      "600g chicken breast, cubed",
+      "200ml yogurt",
+      "2 tbsp tikka masala paste",
+      "400ml tinned tomatoes",
+      "200ml double cream",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "1 tbsp vegetable oil",
+      "Salt and pepper to taste",
+      "Fresh coriander for garnish"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and half the tikka paste for at least 30 minutes.",
+      "Heat oil in a large pan and cook the onion until soft.",
+      "Add garlic and ginger, cook for 1 minute.",
+      "Add remaining tikka paste and cook for 2 minutes.",
+      "Pour in the tinned tomatoes and simmer for 15 minutes.",
+      "Grill or pan-fry the marinated chicken until charred and cooked through.",
+      "Add chicken to the sauce, stir in the cream, and simmer for 10 minutes.",
+      "Season with salt and pepper. Serve with rice and garnish with coriander."
+    ],
+    "createdAt": "2026-01-15T12:00:00Z"
+  },
+  {
+    "id": "lemon-herb-roast-chicken",
+    "name": "Lemon Herb Roast Chicken",
+    "description": "A simple whole roast chicken with bright lemon and fresh herbs. Perfect for Sunday dinner.",
+    "mainIngredient": "chicken",
+    "ingredients": [
+      "1 whole chicken (about 1.8kg)",
+      "2 lemons",
+      "4 sprigs fresh rosemary",
+      "4 sprigs fresh thyme",
+      "4 cloves garlic",
+      "2 tbsp olive oil",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Preheat oven to 200°C (400°F).",
+      "Pat chicken dry and rub with olive oil, salt, and pepper.",
+      "Stuff the cavity with halved lemons, garlic, and half the herbs.",
+      "Place remaining herbs under the skin of the breast.",
+      "Roast for 1 hour 20 minutes, or until juices run clear.",
+      "Rest for 15 minutes before carving. Serve with pan juices."
+    ],
+    "createdAt": "2026-02-01T12:00:00Z"
+  },
+  {
+    "id": "classic-beef-stew",
+    "name": "Classic Beef Stew",
+    "description": "A hearty, slow-cooked stew with tender beef chunks and root vegetables.",
+    "mainIngredient": "beef",
+    "ingredients": [
+      "800g beef chuck, cubed",
+      "3 carrots, chopped",
+      "3 potatoes, cubed",
+      "2 onions, diced",
+      "3 cloves garlic, minced",
+      "2 tbsp tomato paste",
+      "500ml beef stock",
+      "250ml red wine",
+      "2 tbsp flour",
+      "2 tbsp vegetable oil",
+      "2 bay leaves",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Toss beef in flour with salt and pepper.",
+      "Heat oil in a heavy pot and brown the beef in batches. Set aside.",
+      "Sauté onions until soft, then add garlic and tomato paste.",
+      "Pour in wine and scrape up any browned bits.",
+      "Return beef to the pot, add stock and bay leaves.",
+      "Bring to a boil, then reduce heat and simmer for 1.5 hours.",
+      "Add carrots and potatoes, simmer for another 30 minutes until tender.",
+      "Season to taste and serve with crusty bread."
+    ],
+    "createdAt": "2026-01-20T12:00:00Z"
+  },
+  {
+    "id": "beef-tacos",
+    "name": "Beef Tacos",
+    "description": "Quick seasoned ground beef tacos with fresh toppings and a squeeze of lime.",
+    "mainIngredient": "beef",
+    "ingredients": [
+      "500g ground beef",
+      "1 tbsp chili powder",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "½ tsp garlic powder",
+      "8 small tortillas",
+      "1 avocado, sliced",
+      "Shredded lettuce",
+      "Diced tomatoes",
+      "Sour cream",
+      "Lime wedges",
+      "Fresh cilantro"
+    ],
+    "instructions": [
+      "Cook ground beef in a skillet over medium-high heat until browned.",
+      "Drain excess fat, then add chili powder, cumin, paprika, and garlic powder.",
+      "Add a splash of water and simmer for 5 minutes.",
+      "Warm tortillas in a dry pan or microwave.",
+      "Fill tortillas with beef and top with avocado, lettuce, tomatoes, sour cream, and cilantro.",
+      "Squeeze lime over the top and serve."
+    ],
+    "createdAt": "2026-03-05T12:00:00Z"
+  },
+  {
+    "id": "crispy-tofu-stir-fry",
+    "name": "Crispy Tofu Stir-Fry",
+    "description": "Golden crispy tofu tossed with colorful vegetables in a savory garlic-soy sauce.",
+    "mainIngredient": "tofu",
+    "ingredients": [
+      "400g firm tofu, pressed and cubed",
+      "2 tbsp cornstarch",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 tbsp rice vinegar",
+      "1 tbsp honey or maple syrup",
+      "2 cloves garlic, minced",
+      "1 red bell pepper, sliced",
+      "1 head broccoli, cut into florets",
+      "2 spring onions, sliced",
+      "Sesame seeds for garnish",
+      "Vegetable oil for frying"
+    ],
+    "instructions": [
+      "Toss tofu cubes in cornstarch until evenly coated.",
+      "Fry tofu in oil over medium-high heat until golden and crispy on all sides. Set aside.",
+      "Mix soy sauce, sesame oil, rice vinegar, and honey in a small bowl.",
+      "Stir-fry bell pepper and broccoli for 3-4 minutes until tender-crisp.",
+      "Add garlic and cook for 30 seconds.",
+      "Return tofu to the pan, pour in the sauce, and toss to coat.",
+      "Serve over rice, topped with spring onions and sesame seeds."
+    ],
+    "createdAt": "2026-02-10T12:00:00Z"
+  },
+  {
+    "id": "pan-seared-salmon",
+    "name": "Pan-Seared Salmon with Dill",
+    "description": "Perfectly crispy-skinned salmon fillets with a light lemon-dill butter sauce.",
+    "mainIngredient": "fish",
+    "ingredients": [
+      "4 salmon fillets (skin-on)",
+      "2 tbsp butter",
+      "1 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "Juice of 1 lemon",
+      "2 tbsp fresh dill, chopped",
+      "Salt and pepper"
+    ],
+    "instructions": [
+      "Pat salmon dry and season generously with salt and pepper.",
+      "Heat olive oil in a skillet over medium-high heat.",
+      "Place salmon skin-side down and cook for 4-5 minutes until skin is crispy.",
+      "Flip and cook for 2-3 more minutes.",
+      "Remove salmon. Add butter, garlic, lemon juice, and dill to the pan.",
+      "Swirl until butter melts and sauce comes together.",
+      "Spoon sauce over salmon and serve with steamed vegetables."
+    ],
+    "createdAt": "2026-03-01T12:00:00Z"
+  },
+  {
+    "id": "vegetable-curry",
+    "name": "Vegetable Curry",
+    "description": "A warming coconut curry loaded with seasonal vegetables and aromatic spices.",
+    "mainIngredient": "vegetarian",
+    "ingredients": [
+      "400ml coconut milk",
+      "2 tbsp curry paste",
+      "1 sweet potato, cubed",
+      "1 can chickpeas, drained",
+      "200g spinach",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "1 tbsp vegetable oil",
+      "Juice of 1 lime",
+      "Fresh basil leaves"
+    ],
+    "instructions": [
+      "Heat oil and cook onion until softened.",
+      "Add garlic, ginger, and curry paste. Cook for 2 minutes.",
+      "Add sweet potato and coconut milk. Simmer for 15 minutes.",
+      "Add chickpeas and cook for another 5 minutes.",
+      "Stir in spinach until wilted.",
+      "Finish with lime juice. Serve over rice with fresh basil."
+    ],
+    "createdAt": "2026-02-20T12:00:00Z"
+  },
+  {
+    "id": "mushroom-risotto",
+    "name": "Mushroom Risotto",
+    "description": "Creamy arborio rice with earthy mushrooms and a generous finish of parmesan.",
+    "mainIngredient": "vegetarian",
+    "ingredients": [
+      "300g arborio rice",
+      "300g mixed mushrooms, sliced",
+      "1 litre vegetable stock, warm",
+      "150ml white wine",
+      "1 onion, finely diced",
+      "2 cloves garlic, minced",
+      "50g parmesan, grated",
+      "2 tbsp butter",
+      "1 tbsp olive oil",
+      "Fresh parsley"
+    ],
+    "instructions": [
+      "Heat olive oil and half the butter in a wide pan. Sauté mushrooms until golden. Set aside.",
+      "In the same pan, cook onion until soft. Add garlic and rice, stir for 1 minute.",
+      "Pour in wine and stir until absorbed.",
+      "Add warm stock one ladle at a time, stirring frequently, until rice is creamy and al dente (about 18 minutes).",
+      "Stir in mushrooms, remaining butter, and parmesan.",
+      "Season with salt and pepper. Serve topped with parsley."
+    ],
+    "createdAt": "2026-03-10T12:00:00Z"
+  }
+]
