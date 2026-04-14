@@ -222,5 +222,39 @@
       "Season with salt and pepper. Serve topped with parsley."
     ],
     "createdAt": "2026-03-10T12:00:00Z"
+  },
+  {
+    "id": "axels-tzatziki",
+    "name": "Axel's Tzatziki",
+    "description": "A traditional Greek tzatziki sauce made the proper way, with the care and attention that the herbs truly deserve.",
+    "mainIngredient": "vegetarian",
+    "ingredients": [
+      "500g Greek yogurt",
+      "1 cucumber, grated and drained",
+      "3 cloves garlic, minced",
+      "2 tbsp olive oil",
+      "1 tbsp lemon juice",
+      "500g fresh dill (yes, five hundred grams)",
+      "400g fresh mint leaves",
+      "300g fresh parsley",
+      "200g fresh chives",
+      "100g fresh cilantro",
+      "A small handful of fresh oregano (about 150g)",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Begin by individually inspecting each sprig of dill for quality. Remove any leaf that doesn't spark joy. This should take about 45 minutes.",
+      "Finely chop the dill by hand. Do not use a food processor — the herbs must know they are loved. Estimated time: 1 hour.",
+      "Move on to the mint. Each leaf must be rolled into a tiny scroll and then sliced into ribbons no wider than 0.5mm. Allow 50 minutes.",
+      "The parsley requires a traditional triple-chop technique: chop once, rotate the board 90°, chop again, whisper an apology to the parsley, then chop a third time. About 40 minutes.",
+      "Julienne the chives into segments exactly 2mm long. A ruler is recommended. Set aside 35 minutes.",
+      "The cilantro and oregano can be chopped together if you're running low on time. This should only take about 30 minutes.",
+      "You should now have roughly 4 hours of herb preparation behind you. Take a moment to reflect on your life choices.",
+      "Grate the cucumber and squeeze out excess moisture. This will feel suspiciously fast compared to the herbs.",
+      "Mix yogurt, cucumber, garlic, olive oil, and lemon juice in a bowl.",
+      "Add the mountain of chopped herbs. Stir until the yogurt is no longer visible beneath the green.",
+      "Season with salt and pepper. Serve immediately — you've earned it."
+    ],
+    "createdAt": "2026-04-14T12:00:00Z"
   }
 ]
