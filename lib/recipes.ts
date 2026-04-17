@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { revalidatePath } from "next/cache";
+import slugify from "slugify";
 
 export interface Recipe {
   id: string;
@@ -9,6 +10,8 @@ export interface Recipe {
   mainIngredient: string;
   ingredients: string[];
   instructions: string[];
+  image?: string;
+  notes?: string;
   createdAt: string;
 }
 
@@ -29,11 +32,8 @@ function writeRecipes(recipes: Recipe[]): void {
   fs.writeFileSync(DATA_FILE, JSON.stringify(recipes, null, 2));
 }
 
-function slugify(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
+function toSlug(text: string): string {
+  return slugify(text, { lower: true, strict: true });
 }
 
 export function getRecipes(): Recipe[] {
@@ -77,10 +77,10 @@ export function addRecipe(data: {
 }): Recipe {
   const recipes = readRecipes();
 
-  let id = slugify(data.name);
+  let id = toSlug(data.name);
   let suffix = 2;
   while (recipes.some((r) => r.id === id)) {
-    id = `${slugify(data.name)}-${suffix}`;
+    id = `${toSlug(data.name)}-${suffix}`;
     suffix++;
   }
 
