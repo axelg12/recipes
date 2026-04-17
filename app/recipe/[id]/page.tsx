@@ -53,7 +53,7 @@ export default async function RecipePage({
     <div>
       <Link
         href={`/category/${recipe.mainIngredient}`}
-        className="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+        className="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
       >
         &larr; {categoryName}
       </Link>
