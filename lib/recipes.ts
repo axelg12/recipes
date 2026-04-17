@@ -42,7 +42,7 @@ export function getRecipes(): Recipe[] {
 
 export function getRecipesByCategory(category: string): Recipe[] {
   return readRecipes().filter(
-    (r) => r.mainIngredient.toLowerCase() === category.toLowerCase()
+    (r) => r.mainIngredient.toLowerCase() === category.toLowerCase(),
   );
 }
 

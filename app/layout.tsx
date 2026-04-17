@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Recipes",
-  description: "A collection of my favourite recipes, organized by ingredient.",
+  title: "Uppskriftir Axels",
+  description:
+    "Helstu uppskriftirnar sem ég hef sankað að mér en man ekki alltaf",
 };
 
 export default function RootLayout({
@@ -34,9 +35,7 @@ export default function RootLayout({
             <Link
               href="/"
               className="text-xl font-bold tracking-tight hover:opacity-80"
-            >
-              My Recipes
-            </Link>
+            ></Link>
           </nav>
         </header>
         <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-8">
@@ -44,7 +43,7 @@ export default function RootLayout({
         </main>
         <footer className="border-t border-gray-200 dark:border-gray-800">
           <div className="mx-auto max-w-4xl px-6 py-4 text-center text-sm text-gray-500">
-            My Recipes
+            Uppskriftir Axels
           </div>
         </footer>
       </body>

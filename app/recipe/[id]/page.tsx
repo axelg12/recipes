@@ -23,7 +23,7 @@ function renderWithLinks(text: string): ReactNode {
         className="text-blue-600 hover:underline dark:text-blue-400"
       >
         {label}
-      </Link>
+      </Link>,
     );
     lastIndex = start + full.length;
   }

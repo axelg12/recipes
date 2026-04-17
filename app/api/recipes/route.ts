@@ -25,7 +25,7 @@ export async function POST(request: Request) {
   if (missing.length > 0) {
     return Response.json(
       { error: `Missing or invalid fields: ${missing.join(", ")}` },
-      { status: 400 }
+      { status: 400 },
     );
   }
 

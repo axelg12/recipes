@@ -4,34 +4,28 @@
     "name": "Chili con carne",
     "description": "Klassískt chili con carne með nauta hakki.",
     "mainIngredient": "hakk",
-    "ingredients": [
-      "Uppskrift kemur fljótlega!"
-    ],
-    "instructions": [
-      "Uppskrift kemur fljótlega!"
-    ],
+    "ingredients": ["Uppskrift kemur fljótlega!"],
+    "instructions": ["Uppskrift kemur fljótlega!"],
     "createdAt": "2026-04-17T12:00:00Z"
   },
   {
     "id": "grasshopper",
     "name": "Grasshopper",
     "description": "Sígildur grænn kokteill með kremuðu ívafi.",
-    "mainIngredient": "drinks",
+    "mainIngredient": "drykkir",
     "ingredients": [
       "1 hluti green creme de menthe",
       "1 hluti creme de cacao hvítt",
       "2 hlutar rjómi"
     ],
-    "instructions": [
-      "Blanda öllu saman og skella yfir ís!"
-    ],
+    "instructions": ["Blanda öllu saman og skella yfir ís!"],
     "createdAt": "2026-04-17T12:00:00Z"
   },
   {
     "id": "korean-bbq-sosa",
     "name": "Korean BBQ sósa",
     "description": "Sósan sem fylgir Vegan Korean BBQ uppskriftinni. Hún er geggjuð!!",
-    "mainIngredient": "sauces",
+    "mainIngredient": "sósur",
     "ingredients": [
       "0.5 dós tómatar",
       "eitt epli (allir litir)",
@@ -107,7 +101,7 @@
     "id": "thriggja-eggja-ommiletta",
     "name": "Þriggja eggja ommiletta",
     "description": "Mjög próteinrík og góð máltíð. Gott að bæta við grænmeti til að gera hana aðeins meira djúsí. Mér finnst spínat, paprika og tómatar mjög gott.",
-    "mainIngredient": "eggs",
+    "mainIngredient": "egg",
     "ingredients": [
       "3 egg",
       "Salt og pipar",
@@ -128,7 +122,7 @@
     "id": "vegan-baileys",
     "name": "Vegan Baileys",
     "description": "Þetta er mjög gott! Endist ekki að eilífu eins og alvöru Baileys, en mjög gott.",
-    "mainIngredient": "drinks",
+    "mainIngredient": "drykkir",
     "ingredients": [
       "120-140 ml sterkt kaffi",
       "160 ml viskí (Jameson?)",
