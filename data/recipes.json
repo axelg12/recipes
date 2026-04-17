@@ -1,226 +1,192 @@
 [
   {
-    "id": "chicken-tikka-masala",
-    "name": "Chicken Tikka Masala",
-    "description": "Tender chicken pieces in a rich, creamy tomato-spiced sauce. A crowd-pleasing classic.",
-    "mainIngredient": "chicken",
+    "id": "chili-con-carne",
+    "name": "Chili con carne",
+    "description": "Klassískt chili con carne með nauta hakki.",
+    "mainIngredient": "hakk",
     "ingredients": [
-      "600g chicken breast, cubed",
-      "200ml yogurt",
-      "2 tbsp tikka masala paste",
-      "400ml tinned tomatoes",
-      "200ml double cream",
-      "1 onion, diced",
-      "3 cloves garlic, minced",
-      "1 tbsp ginger, grated",
-      "1 tbsp vegetable oil",
-      "Salt and pepper to taste",
-      "Fresh coriander for garnish"
+      "Uppskrift kemur fljótlega!"
     ],
     "instructions": [
-      "Marinate chicken in yogurt and half the tikka paste for at least 30 minutes.",
-      "Heat oil in a large pan and cook the onion until soft.",
-      "Add garlic and ginger, cook for 1 minute.",
-      "Add remaining tikka paste and cook for 2 minutes.",
-      "Pour in the tinned tomatoes and simmer for 15 minutes.",
-      "Grill or pan-fry the marinated chicken until charred and cooked through.",
-      "Add chicken to the sauce, stir in the cream, and simmer for 10 minutes.",
-      "Season with salt and pepper. Serve with rice and garnish with coriander."
+      "Uppskrift kemur fljótlega!"
     ],
-    "createdAt": "2026-01-15T12:00:00Z"
+    "createdAt": "2026-04-17T12:00:00Z"
   },
   {
-    "id": "lemon-herb-roast-chicken",
-    "name": "Lemon Herb Roast Chicken",
-    "description": "A simple whole roast chicken with bright lemon and fresh herbs. Perfect for Sunday dinner.",
-    "mainIngredient": "chicken",
+    "id": "grasshopper",
+    "name": "Grasshopper",
+    "description": "Sígildur grænn kokteill með kremuðu ívafi.",
+    "mainIngredient": "drinks",
     "ingredients": [
-      "1 whole chicken (about 1.8kg)",
-      "2 lemons",
-      "4 sprigs fresh rosemary",
-      "4 sprigs fresh thyme",
-      "4 cloves garlic",
-      "2 tbsp olive oil",
-      "Salt and pepper"
+      "1 hluti green creme de menthe",
+      "1 hluti creme de cacao hvítt",
+      "2 hlutar rjómi"
     ],
     "instructions": [
-      "Preheat oven to 200°C (400°F).",
-      "Pat chicken dry and rub with olive oil, salt, and pepper.",
-      "Stuff the cavity with halved lemons, garlic, and half the herbs.",
-      "Place remaining herbs under the skin of the breast.",
-      "Roast for 1 hour 20 minutes, or until juices run clear.",
-      "Rest for 15 minutes before carving. Serve with pan juices."
+      "Blanda öllu saman og skella yfir ís!"
     ],
-    "createdAt": "2026-02-01T12:00:00Z"
+    "createdAt": "2026-04-17T12:00:00Z"
   },
   {
-    "id": "classic-beef-stew",
-    "name": "Classic Beef Stew",
-    "description": "A hearty, slow-cooked stew with tender beef chunks and root vegetables.",
-    "mainIngredient": "beef",
+    "id": "korean-bbq-sosa",
+    "name": "Korean BBQ sósa",
+    "description": "Sósan sem fylgir Vegan Korean BBQ uppskriftinni. Hún er geggjuð!!",
+    "mainIngredient": "sauces",
     "ingredients": [
-      "800g beef chuck, cubed",
-      "3 carrots, chopped",
-      "3 potatoes, cubed",
-      "2 onions, diced",
-      "3 cloves garlic, minced",
-      "2 tbsp tomato paste",
-      "500ml beef stock",
-      "250ml red wine",
-      "2 tbsp flour",
-      "2 tbsp vegetable oil",
-      "2 bay leaves",
-      "Salt and pepper"
+      "0.5 dós tómatar",
+      "eitt epli (allir litir)",
+      "engifer",
+      "hvítlaukur",
+      "chili paste að eigin vali eða siracha",
+      "smá sýróp (má sleppa)",
+      "soyja",
+      "hrísgrjóna edik",
+      "sesamfræ (ég sleppti en eiga að vera)",
+      "smá kornsterkja (optional en góð)"
     ],
     "instructions": [
-      "Toss beef in flour with salt and pepper.",
-      "Heat oil in a heavy pot and brown the beef in batches. Set aside.",
-      "Sauté onions until soft, then add garlic and tomato paste.",
-      "Pour in wine and scrape up any browned bits.",
-      "Return beef to the pot, add stock and bay leaves.",
-      "Bring to a boil, then reduce heat and simmer for 1.5 hours.",
-      "Add carrots and potatoes, simmer for another 30 minutes until tender.",
-      "Season to taste and serve with crusty bread."
+      "Öllu blandað saman, passa að hafa eplin eins lítil og möguleiki er.",
+      "Hitað og bætt við kornsterkju.",
+      "Soðið niður í þá consistency sem hentar."
     ],
-    "createdAt": "2026-01-20T12:00:00Z"
+    "image": "/recipes/bbq.png",
+    "notes": "Þetta er sósan úr [Vegan Korean BBQ](/recipe/vegan-korean-bbq-tofu).",
+    "createdAt": "2026-04-17T12:00:00Z"
   },
   {
-    "id": "beef-tacos",
-    "name": "Beef Tacos",
-    "description": "Quick seasoned ground beef tacos with fresh toppings and a squeeze of lime.",
-    "mainIngredient": "beef",
+    "id": "protein-banana-ponnukokur",
+    "name": "Prótein banana pönnukökur",
+    "description": "Próteinríkar banana pönnukökur — góðar í morgunmat eða eftir æfingu.",
+    "mainIngredient": "protein",
     "ingredients": [
-      "500g ground beef",
-      "1 tbsp chili powder",
-      "1 tsp cumin",
-      "1 tsp paprika",
-      "½ tsp garlic powder",
-      "8 small tortillas",
-      "1 avocado, sliced",
-      "Shredded lettuce",
-      "Diced tomatoes",
-      "Sour cream",
-      "Lime wedges",
-      "Fresh cilantro"
+      "2 eggjahvítur (má bæta við fleirum ef þær eru til, og auka próteinið)",
+      "1 banani",
+      "1 skeið prótein duft",
+      "0.5-1 bolli hafrar (má auka til að fá auka kolvetni og setja smá mjólk/möndlu/haframjólk með ef deigið verður of þykkt)",
+      "Lyftiduft (ekki nauðsynlegt en þær verða meiri fluffy)",
+      "Kanill (optional)",
+      "Olía/smjör til að steikja",
+      "Salt"
     ],
     "instructions": [
-      "Cook ground beef in a skillet over medium-high heat until browned.",
-      "Drain excess fat, then add chili powder, cumin, paprika, and garlic powder.",
-      "Add a splash of water and simmer for 5 minutes.",
-      "Warm tortillas in a dry pan or microwave.",
-      "Fill tortillas with beef and top with avocado, lettuce, tomatoes, sour cream, and cilantro.",
-      "Squeeze lime over the top and serve."
+      "Panna hituð á medium / medium low (í lægri kantinum).",
+      "Allt er sett í blandara og blandað þangað til smooth og eins og pönnukökudeig. Það er í lagi að gera þetta snemma og geyma í ísskápnum.",
+      "Hver pönnukaka er steikt þangað til það koma litlar loftbólur og er þá snúið."
     ],
-    "createdAt": "2026-03-05T12:00:00Z"
+    "notes": "Næringargildi: ~375 kcal, 35 g prótein, 40-55 g kolvetni, 3 g fita.",
+    "createdAt": "2026-04-17T12:00:00Z"
   },
   {
-    "id": "crispy-tofu-stir-fry",
-    "name": "Crispy Tofu Stir-Fry",
-    "description": "Golden crispy tofu tossed with colorful vegetables in a savory garlic-soy sauce.",
+    "id": "thai-curry",
+    "name": "Thai Curry (Rautt/Grænt)",
+    "description": "Ég prófaði að setja tofu út í en kjúklingur er líka mjög góður. Fyrir grænt notar maður bara grænt curry paste úr búð og rautt curry paste fyrir rautt.",
     "mainIngredient": "tofu",
     "ingredients": [
-      "400g firm tofu, pressed and cubed",
-      "2 tbsp cornstarch",
-      "2 tbsp soy sauce",
-      "1 tbsp sesame oil",
-      "1 tbsp rice vinegar",
-      "1 tbsp honey or maple syrup",
-      "2 cloves garlic, minced",
-      "1 red bell pepper, sliced",
-      "1 head broccoli, cut into florets",
-      "2 spring onions, sliced",
-      "Sesame seeds for garnish",
-      "Vegetable oil for frying"
+      "1 laukur",
+      "1 chili (ekki of sterkt, má sleppa annars)",
+      "Engifer bútur",
+      "3-5 hvítlauksrif",
+      "Green/Red curry paste (keypt út í búð)",
+      "1 kókosmjólk í dós",
+      "Tofú/Kjúklingur",
+      "Auka grænmeti sem til er (dæmi: green beans, sætar, gulrætur, eggaldin etc.)",
+      "AUKA DÓT SEM ER GOTT (gefur mun meira bragð): fiskisósa (soya líka hægt?), sítrónugras/lemon grass, lime, smá sykur"
     ],
     "instructions": [
-      "Toss tofu cubes in cornstarch until evenly coated.",
-      "Fry tofu in oil over medium-high heat until golden and crispy on all sides. Set aside.",
-      "Mix soy sauce, sesame oil, rice vinegar, and honey in a small bowl.",
-      "Stir-fry bell pepper and broccoli for 3-4 minutes until tender-crisp.",
-      "Add garlic and cook for 30 seconds.",
-      "Return tofu to the pan, pour in the sauce, and toss to coat.",
-      "Serve over rice, topped with spring onions and sesame seeds."
+      "Laukur, chili, engifer, hvítlaukur er annað hvort saxað smátt eða sett í blandara og hakkað allt saman. Svo sett á pönnu með smá olíu — bara til að ná úr smá vökva.",
+      "Eftir smá stund er curry paste sett út í ásamt kókosmjólk. Ef aukadót er til, þá setja það núna.",
+      "Grænmeti sett út í með tofu/kjúklingi.",
+      "Leyft að malla þar til öll hráefnin eru elduð eða þangað til maður vill borða.",
+      "Hrísgrjón eru nice með."
     ],
-    "createdAt": "2026-02-10T12:00:00Z"
+    "image": "/recipes/thai.png",
+    "notes": "Byggt að hluta til á [BBC uppskriftinni](https://www.bbcgoodfood.com/recipes/thai-red-curry). Ég setti baunir út í réttinn en það má setja HVAÐ SEM ER — gulrætur, sætar, blómkál, eggaldin, spínat, whatever.",
+    "createdAt": "2026-04-17T12:00:00Z"
   },
   {
-    "id": "pan-seared-salmon",
-    "name": "Pan-Seared Salmon with Dill",
-    "description": "Perfectly crispy-skinned salmon fillets with a light lemon-dill butter sauce.",
-    "mainIngredient": "fish",
+    "id": "thriggja-eggja-ommiletta",
+    "name": "Þriggja eggja ommiletta",
+    "description": "Mjög próteinrík og góð máltíð. Gott að bæta við grænmeti til að gera hana aðeins meira djúsí. Mér finnst spínat, paprika og tómatar mjög gott.",
+    "mainIngredient": "eggs",
     "ingredients": [
-      "4 salmon fillets (skin-on)",
-      "2 tbsp butter",
-      "1 tbsp olive oil",
-      "2 cloves garlic, minced",
-      "Juice of 1 lemon",
-      "2 tbsp fresh dill, chopped",
-      "Salt and pepper"
+      "3 egg",
+      "Salt og pipar",
+      "Grænmeti / álegg að eigin vali",
+      "Olía/smjör til að steikja"
     ],
     "instructions": [
-      "Pat salmon dry and season generously with salt and pepper.",
-      "Heat olive oil in a skillet over medium-high heat.",
-      "Place salmon skin-side down and cook for 4-5 minutes until skin is crispy.",
-      "Flip and cook for 2-3 more minutes.",
-      "Remove salmon. Add butter, garlic, lemon juice, and dill to the pan.",
-      "Swirl until butter melts and sauce comes together.",
-      "Spoon sauce over salmon and serve with steamed vegetables."
+      "Hita pönnuna á meðal lágum hita. Alls ekki of heita!",
+      "Í skál þarf að hræra saman eggin með salti og pipar.",
+      "Olía sett á pönnuna og eggin út í.",
+      "Beðið þangað til eggin eru sirka 75% elduð og þá er bætt við grænmetinu/osti/áleggi ofan á eggin.",
+      "Eftir smá stund þarf að brjóta saman ommilettuna í tvennt."
     ],
-    "createdAt": "2026-03-01T12:00:00Z"
+    "notes": "Næringargildi (bara eggin): 234 kcal, 15 g fita, 18 g prótein, 1.8 g kolvetni.",
+    "createdAt": "2026-04-17T12:00:00Z"
   },
   {
-    "id": "vegetable-curry",
-    "name": "Vegetable Curry",
-    "description": "A warming coconut curry loaded with seasonal vegetables and aromatic spices.",
-    "mainIngredient": "vegetarian",
+    "id": "vegan-baileys",
+    "name": "Vegan Baileys",
+    "description": "Þetta er mjög gott! Endist ekki að eilífu eins og alvöru Baileys, en mjög gott.",
+    "mainIngredient": "drinks",
     "ingredients": [
-      "400ml coconut milk",
-      "2 tbsp curry paste",
-      "1 sweet potato, cubed",
-      "1 can chickpeas, drained",
-      "200g spinach",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "1 tbsp ginger, grated",
-      "1 tbsp vegetable oil",
-      "Juice of 1 lime",
-      "Fresh basil leaves"
+      "120-140 ml sterkt kaffi",
+      "160 ml viskí (Jameson?)",
+      "Vanillu dropar (2 teskeiðar)",
+      "2 kókosrjóma dósir",
+      "120 ml agave"
     ],
     "instructions": [
-      "Heat oil and cook onion until softened.",
-      "Add garlic, ginger, and curry paste. Cook for 2 minutes.",
-      "Add sweet potato and coconut milk. Simmer for 15 minutes.",
-      "Add chickpeas and cook for another 5 minutes.",
-      "Stir in spinach until wilted.",
-      "Finish with lime juice. Serve over rice with fresh basil."
+      "Allt sett í blender á full force og svo bara í krukku og kæla!"
     ],
-    "createdAt": "2026-02-20T12:00:00Z"
+    "notes": "Uppskrift fyrir 1 líter. [Sjá nánar hjá Simple Vegan Blog](https://simpleveganblog.com/vegan-baileys/).",
+    "createdAt": "2026-04-17T12:00:00Z"
   },
   {
-    "id": "mushroom-risotto",
-    "name": "Mushroom Risotto",
-    "description": "Creamy arborio rice with earthy mushrooms and a generous finish of parmesan.",
-    "mainIngredient": "vegetarian",
+    "id": "vegan-korean-bbq-tofu",
+    "name": "Vegan Korean BBQ tofu",
+    "description": "Stökkt vegan tofu í Korean BBQ sósu. Gott eitt og sér, frábært með hrísgrjónum.",
+    "mainIngredient": "tofu",
     "ingredients": [
-      "300g arborio rice",
-      "300g mixed mushrooms, sliced",
-      "1 litre vegetable stock, warm",
-      "150ml white wine",
-      "1 onion, finely diced",
-      "2 cloves garlic, minced",
-      "50g parmesan, grated",
-      "2 tbsp butter",
-      "1 tbsp olive oil",
-      "Fresh parsley"
+      "Fast tofu",
+      "Kornsterkja",
+      "Salt",
+      "Olía til steikingar",
+      "Korean BBQ sósa (sjá uppskrift)"
     ],
     "instructions": [
-      "Heat olive oil and half the butter in a wide pan. Sauté mushrooms until golden. Set aside.",
-      "In the same pan, cook onion until soft. Add garlic and rice, stir for 1 minute.",
-      "Pour in wine and stir until absorbed.",
-      "Add warm stock one ladle at a time, stirring frequently, until rice is creamy and al dente (about 18 minutes).",
-      "Stir in mushrooms, remaining butter, and parmesan.",
-      "Season with salt and pepper. Serve topped with parsley."
+      "Pressa tófú með handklæði í sirka 30 mín.",
+      "Útbúa [Korean BBQ sósu](/recipe/korean-bbq-sosa).",
+      "Velta tófu upp úr kornsterkju. Passa að hafa bitana breiða og mjóa.",
+      "Steikja tófu á pönnu við frekar háan hita og gefa nógan tíma. Það má fara nóg salt á tófú-ið hér því það er frekar bragðlaust eitt og sér — sérstaklega ef maður vill bara steikja tófú-ið en ekki setja það í sósuna. Setja svo til hliðar.",
+      "Blanda öllu saman."
     ],
-    "createdAt": "2026-03-10T12:00:00Z"
+    "image": "/recipes/bbq.png",
+    "notes": "Byggt á [þessari uppskrift frá Rabbit and Wolves](https://www.rabbitandwolves.com/vegan-crispy-korean-bbq-tofu/).",
+    "createdAt": "2026-04-17T12:00:00Z"
+  },
+  {
+    "id": "vegan-ramen",
+    "name": "Vegan/vegiterian Ramen",
+    "description": "Algjörlega tryllt og auðvelt að útbúa fyrirfram. Hægt að gera súpugrunninn töluvert fram í tímann og geyma í ísskáp.",
+    "mainIngredient": "tofu",
+    "ingredients": [
+      "2 matskeiðar hvítlaukur (sem er hell of a lot)",
+      "2 teskeiðar engifer",
+      "3-5 matskeiðar soya sósa",
+      "2 matskeiðar mirin (eða hrísgrjónaedik plús 2 teskeiðar sykur)",
+      "Þurrkaðir sveppir (KEY!)",
+      "Kjúklingasoð eða kraftur",
+      "Ramen núðlur",
+      "Toppar að eigin vali: vorlaukur, hnetur, steiktur laukur, egg, steikt tofu (t.d. eins og gert er í [Korean BBQ uppskriftinni](/recipe/vegan-korean-bbq-tofu))"
+    ],
+    "instructions": [
+      "Blanda engiferi og hvítlauk saman. Svo soya og mirin og loks soðinu. Þetta er látið sjóða í smá tíma.",
+      "Á meðan er hægt að preppa þurrkuðu sveppina. Samkvæmt leiðbeiningum átti ég að setja mína í sjóðandi vatn til að skola af þeim fyrst, sem ég gerði, en líklega má setja þá beint út í.",
+      "Ramen núðlur soðnar rétt undir ráðlögðum tíma og settar svo í kalt vatn.",
+      "Þegar allt er ready er súpan sett í skál, núðlur út í og toppað með því sem fólk vill. Geggjað matarboðs dæmi."
+    ],
+    "notes": "ATHUGIÐ: þurrkuðu sveppirnir gefa gott bragð en verða ansi seigir. Næst ætla ég að nota töfrasprota og mauka allan grunninn áður en ég ber hana fram. Uppskrift fyrir 2ish, byggð að miklu leyti á [forkknifeswoon kjúklinga ramen](https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/).",
+    "createdAt": "2026-04-17T12:00:00Z"
   }
 ]
