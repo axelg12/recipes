@@ -1,0 +1,6 @@
+{
+  "deploy": {
+    "framework": "nextjs",
+    "install": "deno run -A --v8-flags=--max-old-space-size=3072 npm:pnpm@10 install --frozen-lockfile"
+  }
+}
