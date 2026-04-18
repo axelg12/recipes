@@ -73,6 +73,8 @@ export async function addRecipe(data: {
   mainIngredient: string;
   ingredients: string[];
   instructions: string[];
+  image?: string;
+  notes?: string;
 }): Promise<Recipe> {
   const kv = await getKv();
 
@@ -91,6 +93,8 @@ export async function addRecipe(data: {
     mainIngredient: data.mainIngredient.toLowerCase(),
     ingredients: data.ingredients,
     instructions: data.instructions,
+    ...(data.image ? { image: data.image } : {}),
+    ...(data.notes ? { notes: data.notes } : {}),
     createdAt: new Date().toISOString(),
   };
 

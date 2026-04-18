@@ -8,8 +8,15 @@ export async function POST(request: Request) {
     return Response.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const { name, description, mainIngredient, ingredients, instructions } =
-    body as Record<string, unknown>;
+  const {
+    name,
+    description,
+    mainIngredient,
+    ingredients,
+    instructions,
+    image,
+    notes,
+  } = body as Record<string, unknown>;
 
   const missing: string[] = [];
   if (!name || typeof name !== "string") missing.push("name");
@@ -21,6 +28,10 @@ export async function POST(request: Request) {
     missing.push("ingredients");
   if (!Array.isArray(instructions) || instructions.length === 0)
     missing.push("instructions");
+  if (image !== undefined && typeof image !== "string")
+    missing.push("image");
+  if (notes !== undefined && typeof notes !== "string")
+    missing.push("notes");
 
   if (missing.length > 0) {
     return Response.json(
@@ -35,6 +46,8 @@ export async function POST(request: Request) {
     mainIngredient: mainIngredient as string,
     ingredients: ingredients as string[],
     instructions: instructions as string[],
+    image: image as string | undefined,
+    notes: notes as string | undefined,
   });
 
   return Response.json(recipe, { status: 201 });

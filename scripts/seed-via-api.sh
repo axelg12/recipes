@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# Seed prod via the API — one POST per recipe.
+# Usage: PROD_URL=https://your-site.deno.dev bash seed-via-api.sh
+set -euo pipefail
+: "${PROD_URL:?set PROD_URL to your deployed origin (e.g. https://foo.deno.dev)}"
+
+echo "==> chili-con-carne"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Chili con carne\",\"description\":\"Klassískt chili con carne með nauta hakki.\",\"mainIngredient\":\"hakk\",\"ingredients\":[\"Uppskrift kemur fljótlega!\"],\"instructions\":[\"Uppskrift kemur fljótlega!\"]}"
+echo
+
+echo "==> grasshopper"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Grasshopper\",\"description\":\"Sígildur grænn kokteill með kremuðu ívafi.\",\"mainIngredient\":\"drykkir\",\"ingredients\":[\"1 hluti green creme de menthe\",\"1 hluti creme de cacao hvítt\",\"2 hlutar rjómi\"],\"instructions\":[\"Blanda öllu saman og skella yfir ís!\"]}"
+echo
+
+echo "==> korean-bbq-sosa"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Korean BBQ sósa\",\"description\":\"Sósan sem fylgir Vegan Korean BBQ uppskriftinni. Hún er geggjuð!!\",\"mainIngredient\":\"sósur\",\"ingredients\":[\"0.5 dós tómatar\",\"eitt epli (allir litir)\",\"engifer\",\"hvítlaukur\",\"chili paste að eigin vali eða siracha\",\"smá sýróp (má sleppa)\",\"soyja\",\"hrísgrjóna edik\",\"sesamfræ (ég sleppti en eiga að vera)\",\"smá kornsterkja (optional en góð)\"],\"instructions\":[\"Öllu blandað saman, passa að hafa eplin eins lítil og möguleiki er.\",\"Hitað og bætt við kornsterkju.\",\"Soðið niður í þá consistency sem hentar.\"],\"image\":\"/recipes/bbq.png\",\"notes\":\"Þetta er sósan úr [Vegan Korean BBQ](/recipe/vegan-korean-bbq-tofu).\"}"
+echo
+
+echo "==> protein-banana-ponnukokur"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Prótein banana pönnukökur\",\"description\":\"Próteinríkar banana pönnukökur — góðar í morgunmat eða eftir æfingu.\",\"mainIngredient\":\"protein\",\"ingredients\":[\"2 eggjahvítur (má bæta við fleirum ef þær eru til, og auka próteinið)\",\"1 banani\",\"1 skeið prótein duft\",\"0.5-1 bolli hafrar (má auka til að fá auka kolvetni og setja smá mjólk/möndlu/haframjólk með ef deigið verður of þykkt)\",\"Lyftiduft (ekki nauðsynlegt en þær verða meiri fluffy)\",\"Kanill (optional)\",\"Olía/smjör til að steikja\",\"Salt\"],\"instructions\":[\"Panna hituð á medium / medium low (í lægri kantinum).\",\"Allt er sett í blandara og blandað þangað til smooth og eins og pönnukökudeig. Það er í lagi að gera þetta snemma og geyma í ísskápnum.\",\"Hver pönnukaka er steikt þangað til það koma litlar loftbólur og er þá snúið.\"],\"notes\":\"Næringargildi: ~375 kcal, 35 g prótein, 40-55 g kolvetni, 3 g fita.\"}"
+echo
+
+echo "==> thai-curry"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Thai Curry (Rautt/Grænt)\",\"description\":\"Ég prófaði að setja tofu út í en kjúklingur er líka mjög góður. Fyrir grænt notar maður bara grænt curry paste úr búð og rautt curry paste fyrir rautt.\",\"mainIngredient\":\"tofu\",\"ingredients\":[\"1 laukur\",\"1 chili (ekki of sterkt, má sleppa annars)\",\"Engifer bútur\",\"3-5 hvítlauksrif\",\"Green/Red curry paste (keypt út í búð)\",\"1 kókosmjólk í dós\",\"Tofú/Kjúklingur\",\"Auka grænmeti sem til er (dæmi: green beans, sætar, gulrætur, eggaldin etc.)\",\"AUKA DÓT SEM ER GOTT (gefur mun meira bragð): fiskisósa (soya líka hægt?), sítrónugras/lemon grass, lime, smá sykur\"],\"instructions\":[\"Laukur, chili, engifer, hvítlaukur er annað hvort saxað smátt eða sett í blandara og hakkað allt saman. Svo sett á pönnu með smá olíu — bara til að ná úr smá vökva.\",\"Eftir smá stund er curry paste sett út í ásamt kókosmjólk. Ef aukadót er til, þá setja það núna.\",\"Grænmeti sett út í með tofu/kjúklingi.\",\"Leyft að malla þar til öll hráefnin eru elduð eða þangað til maður vill borða.\",\"Hrísgrjón eru nice með.\"],\"image\":\"/recipes/thai.png\",\"notes\":\"Byggt að hluta til á [BBC uppskriftinni](https://www.bbcgoodfood.com/recipes/thai-red-curry). Ég setti baunir út í réttinn en það má setja HVAÐ SEM ER — gulrætur, sætar, blómkál, eggaldin, spínat, whatever.\"}"
+echo
+
+echo "==> thriggja-eggja-ommiletta"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Þriggja eggja ommiletta\",\"description\":\"Mjög próteinrík og góð máltíð. Gott að bæta við grænmeti til að gera hana aðeins meira djúsí. Mér finnst spínat, paprika og tómatar mjög gott.\",\"mainIngredient\":\"egg\",\"ingredients\":[\"3 egg\",\"Salt og pipar\",\"Grænmeti / álegg að eigin vali\",\"Olía/smjör til að steikja\"],\"instructions\":[\"Hita pönnuna á meðal lágum hita. Alls ekki of heita!\",\"Í skál þarf að hræra saman eggin með salti og pipar.\",\"Olía sett á pönnuna og eggin út í.\",\"Beðið þangað til eggin eru sirka 75% elduð og þá er bætt við grænmetinu/osti/áleggi ofan á eggin.\",\"Eftir smá stund þarf að brjóta saman ommilettuna í tvennt.\"],\"notes\":\"Næringargildi (bara eggin): 234 kcal, 15 g fita, 18 g prótein, 1.8 g kolvetni.\"}"
+echo
+
+echo "==> vegan-baileys"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Vegan Baileys\",\"description\":\"Þetta er mjög gott! Endist ekki að eilífu eins og alvöru Baileys, en mjög gott.\",\"mainIngredient\":\"drykkir\",\"ingredients\":[\"120-140 ml sterkt kaffi\",\"160 ml viskí (Jameson?)\",\"Vanillu dropar (2 teskeiðar)\",\"2 kókosrjóma dósir\",\"120 ml agave\"],\"instructions\":[\"Allt sett í blender á full force og svo bara í krukku og kæla!\"],\"notes\":\"Uppskrift fyrir 1 líter. [Sjá nánar hjá Simple Vegan Blog](https://simpleveganblog.com/vegan-baileys/).\"}"
+echo
+
+echo "==> vegan-korean-bbq-tofu"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Vegan Korean BBQ tofu\",\"description\":\"Stökkt vegan tofu í Korean BBQ sósu. Gott eitt og sér, frábært með hrísgrjónum.\",\"mainIngredient\":\"tofu\",\"ingredients\":[\"Fast tofu\",\"Kornsterkja\",\"Salt\",\"Olía til steikingar\",\"Korean BBQ sósa (sjá uppskrift)\"],\"instructions\":[\"Pressa tófú með handklæði í sirka 30 mín.\",\"Útbúa [Korean BBQ sósu](/recipe/korean-bbq-sosa).\",\"Velta tófu upp úr kornsterkju. Passa að hafa bitana breiða og mjóa.\",\"Steikja tófu á pönnu við frekar háan hita og gefa nógan tíma. Það má fara nóg salt á tófú-ið hér því það er frekar bragðlaust eitt og sér — sérstaklega ef maður vill bara steikja tófú-ið en ekki setja það í sósuna. Setja svo til hliðar.\",\"Blanda öllu saman.\"],\"image\":\"/recipes/bbq.png\",\"notes\":\"Byggt á [þessari uppskrift frá Rabbit and Wolves](https://www.rabbitandwolves.com/vegan-crispy-korean-bbq-tofu/).\"}"
+echo
+
+echo "==> vegan-ramen"
+curl -sS -f -X POST "$PROD_URL/api/recipes" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\":\"Vegan/vegiterian Ramen\",\"description\":\"Algjörlega tryllt og auðvelt að útbúa fyrirfram. Hægt að gera súpugrunninn töluvert fram í tímann og geyma í ísskáp.\",\"mainIngredient\":\"tofu\",\"ingredients\":[\"2 matskeiðar hvítlaukur (sem er hell of a lot)\",\"2 teskeiðar engifer\",\"3-5 matskeiðar soya sósa\",\"2 matskeiðar mirin (eða hrísgrjónaedik plús 2 teskeiðar sykur)\",\"Þurrkaðir sveppir (KEY!)\",\"Kjúklingasoð eða kraftur\",\"Ramen núðlur\",\"Toppar að eigin vali: vorlaukur, hnetur, steiktur laukur, egg, steikt tofu (t.d. eins og gert er í [Korean BBQ uppskriftinni](/recipe/vegan-korean-bbq-tofu))\"],\"instructions\":[\"Blanda engiferi og hvítlauk saman. Svo soya og mirin og loks soðinu. Þetta er látið sjóða í smá tíma.\",\"Á meðan er hægt að preppa þurrkuðu sveppina. Samkvæmt leiðbeiningum átti ég að setja mína í sjóðandi vatn til að skola af þeim fyrst, sem ég gerði, en líklega má setja þá beint út í.\",\"Ramen núðlur soðnar rétt undir ráðlögðum tíma og settar svo í kalt vatn.\",\"Þegar allt er ready er súpan sett í skál, núðlur út í og toppað með því sem fólk vill. Geggjað matarboðs dæmi.\"],\"notes\":\"ATHUGIÐ: þurrkuðu sveppirnir gefa gott bragð en verða ansi seigir. Næst ætla ég að nota töfrasprota og mauka allan grunninn áður en ég ber hana fram. Uppskrift fyrir 2ish, byggð að miklu leyti á [forkknifeswoon kjúklinga ramen](https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/).\"}"
+echo
