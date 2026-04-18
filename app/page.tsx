@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { getCategories } from "@/lib/recipes";
 
-export default function Home() {
-  const categories = getCategories();
+export default async function Home() {
+  const categories = await getCategories();
 
   return (
     <div>

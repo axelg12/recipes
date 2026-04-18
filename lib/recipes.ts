@@ -1,7 +1,6 @@
-import fs from "fs";
-import path from "path";
 import { revalidatePath } from "next/cache";
 import slugify from "slugify";
+import { getKv } from "./kv";
 
 export interface Recipe {
   id: string;
@@ -21,37 +20,37 @@ export interface Category {
   count: number;
 }
 
-const DATA_FILE = path.join(process.cwd(), "data", "recipes.json");
-
-function readRecipes(): Recipe[] {
-  const raw = fs.readFileSync(DATA_FILE, "utf-8");
-  return JSON.parse(raw);
-}
-
-function writeRecipes(recipes: Recipe[]): void {
-  fs.writeFileSync(DATA_FILE, JSON.stringify(recipes, null, 2));
-}
+const RECIPE_PREFIX = ["recipe"] as const;
+const recipeKey = (id: string) => [...RECIPE_PREFIX, id];
 
 function toSlug(text: string): string {
   return slugify(text, { lower: true, strict: true });
 }
 
-export function getRecipes(): Recipe[] {
-  return readRecipes();
+export async function getRecipes(): Promise<Recipe[]> {
+  const kv = await getKv();
+  const recipes: Recipe[] = [];
+  for await (const entry of kv.list<Recipe>({ prefix: [...RECIPE_PREFIX] })) {
+    recipes.push(entry.value);
+  }
+  return recipes;
 }
 
-export function getRecipesByCategory(category: string): Recipe[] {
-  return readRecipes().filter(
+export async function getRecipesByCategory(category: string): Promise<Recipe[]> {
+  const recipes = await getRecipes();
+  return recipes.filter(
     (r) => r.mainIngredient.toLowerCase() === category.toLowerCase(),
   );
 }
 
-export function getRecipeById(id: string): Recipe | undefined {
-  return readRecipes().find((r) => r.id === id);
+export async function getRecipeById(id: string): Promise<Recipe | undefined> {
+  const kv = await getKv();
+  const entry = await kv.get<Recipe>(recipeKey(id));
+  return entry.value ?? undefined;
 }
 
-export function getCategories(): Category[] {
-  const recipes = readRecipes();
+export async function getCategories(): Promise<Category[]> {
+  const recipes = await getRecipes();
   const map = new Map<string, number>();
 
   for (const r of recipes) {
@@ -68,19 +67,20 @@ export function getCategories(): Category[] {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-export function addRecipe(data: {
+export async function addRecipe(data: {
   name: string;
   description: string;
   mainIngredient: string;
   ingredients: string[];
   instructions: string[];
-}): Recipe {
-  const recipes = readRecipes();
+}): Promise<Recipe> {
+  const kv = await getKv();
 
-  let id = toSlug(data.name);
+  const base = toSlug(data.name);
+  let id = base;
   let suffix = 2;
-  while (recipes.some((r) => r.id === id)) {
-    id = `${toSlug(data.name)}-${suffix}`;
+  while ((await kv.get<Recipe>(recipeKey(id))).value !== null) {
+    id = `${base}-${suffix}`;
     suffix++;
   }
 
@@ -94,8 +94,7 @@ export function addRecipe(data: {
     createdAt: new Date().toISOString(),
   };
 
-  recipes.push(recipe);
-  writeRecipes(recipes);
+  await kv.set(recipeKey(id), recipe);
 
   revalidatePath("/");
   revalidatePath(`/category/${recipe.mainIngredient}`);

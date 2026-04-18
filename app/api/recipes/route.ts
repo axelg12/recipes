@@ -29,7 +29,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const recipe = addRecipe({
+  const recipe = await addRecipe({
     name: name as string,
     description: description as string,
     mainIngredient: mainIngredient as string,

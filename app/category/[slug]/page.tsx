@@ -7,8 +7,9 @@ export default async function CategoryPage({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
-  const recipes = getRecipesByCategory(slug);
+  const { slug: rawSlug } = await params;
+  const slug = decodeURIComponent(rawSlug);
+  const recipes = await getRecipesByCategory(slug);
 
   if (recipes.length === 0) {
     notFound();
